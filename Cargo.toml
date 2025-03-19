@@ -1,15 +1,12 @@
 [package]
 name = "path_scan"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 license = "MIT"
 authors = ["Conashimi Momota <momota.ry2@gmail.com>"]
 description = "A lightweight Rust procedural macro for parsing path patterns (URLs, routes) with variable capturing, static binding, and compile-time checks."
 
-[lib]
-proc-macro = true
-
 [dependencies]
-syn = { version = "2.0", features = ["full"] }
-quote = "1.0"
+path_scan_macro = "0.0.1"
 regex = "1.11"
+once_cell = "1.21.1"
